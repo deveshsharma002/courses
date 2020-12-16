@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  
+}
+body{
+  background: url('/deve.jpg');
+  background-size: cover;
+}
+.logoimg{
+    height: 20px;
+    width: 35px;
+}
+
+nav{
+  padding: 5px 40px;
+  background-color: black;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  font-weight: 500;
+  padding: 20px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: .2s;
+}
+nav ul li:hover a{
+  color: rgb(164, 237, 255);
+}
+
+nav ul li .active{
+  color:rgb(164, 237, 255);
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    height: 50px;
+    
+    display: none;
+  }
+  nav ul li a{
+    font-size: 30px;
+  }
+  nav ul li{
+      padding: 5px;
+  }
+  nav ul li.items.show{
+    display: grid;
+    font-weight: 600;
+    text-align: right;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}
+
+
+.heading h4{
+    font-size: 60px;
+    margin: 50px;
+
+    font-weight: 900;
+}
+.heading p{
+  margin: 53px;
+  margin-bottom: -50px;
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+ 
+}
+#op hr{
+    height: 10px;
+    width: 120px;
+    margin-top: -30px;
+    margin-left: 50px;
+    background-color: black;
+}
+
+
+
+
+
+/* Footer Styling */
+
+footer{
+  background-color:#0e0e0e;
+    margin-top: 300px;
+  width: 100%;   
+
+  font-family: raleway;
+}
+.footerMain{
+  display: flex;
+}
+
+.items{
+  font-size: 15px;
+  font-weight: 400;
+}
+.footerMain .box{
+  flex-basis: 50%;
+  padding: 40px 40px;
+  font-size: 13px;
+  font-family: raleway;
+  font-weight: 100;
+}
+.footerLeft h4{
+  color: white;
+  font-family: raleway;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.footerCenter{
+  color: white;
+}
+.footerCenter .fa{
+  font-size: 1.1rem;
+  line-height: 30px;
+  background-color: #2e2e2e;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footerCenter .fa:hover{
+  background-color: #3b3b3b;
+}
+
+.footerCenter h4{
+color: white;
+  font-family: raleway;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.email a{
+  text-decoration: none;
+  color: white;
+}
+
+.links{
+  margin-top: 15px;
+}
+.links a{
+
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: 3px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  background-color: #2e2e2e;
+  transition: 0.3s;
+}
+.links a:hover{
+  background-color: #3b3b3b;
+}
+
+.footerRight h4{
+color: white;
+font-family: raleway;
+font-size: 1.5rem;
+font-weight: 200;
+}
+
+.footerLeft{
+  margin: 20px 0 0 0;
+}
+.footerCenter{
+  margin: 20px 0 0 0;
+}
+.footerRight{
+  margin: 20px 0 0 0;
+}
+
+@media screen and (max-width: 900px){
+
+  .footerMain{
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+}
+
+footer hr{
+  height: 0.5px;
+  width: 50px;
+  margin-top: 5px;
+  background-color: white;
+}

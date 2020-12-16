@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="css/about.css">
+    <title>About</title>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li class="logo">
+            <div>
+          <img src="logo.png" alt="" class="logoimg">Devesh Sharma
+            </div>
+          </li>
+          <li class="items"><a href="index.html" >Home</a></li>
+          <li class="items active"><a href="about.html" class="active">About</a></li>
+          <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+  </nav>
+  <script>
+    $(document).ready(function(){
+      $('.btn').click(function(){
+        $('.items').toggleClass("show");
+        $('ul li').toggleClass("hide");
+      });
+    });
+  </script>
+
+  <div class="heading" id="op">
+    <p>Designed & Developed by:
+    </p>
+      <h4>Devesh Sharma</h4><hr>
+      
+  </div>
+      
+      
+  </div>
+
+    <!-- Footer Begin From here -->
+      <footer>
+        <div class="footerMain">
+            <div class="footerLeft box">
+                <h4>Devesh Sharma</h4><hr>
+            </div>
+            <div class="footerCenter box">
+                <h4>Contact</h4><hr><br>
+                <div class="address items">
+                    <span class="fa fa-map-marker-alt"></span>
+                    <span>Rajgarh, Rajasthan (INDIA)
+                </div>
+                <div class="phone items">
+                    <span class="fa fa-phone"></span>
+                    <span>+91 8302172779</span>
+                </div>
+                <div class="email items">
+                    <span class="fa fa-envelope"></span>
+                    <span><a href="deveshs70283@gmail.com">deveshs70283@gmail.com</a></span>
+                </div>
+            </div>
+            <div class="footerRight box">
+                <h4>Social Network</h4><hr><br>
+                <div class="links">
+                    <a href="https://www.facebook.com/profile.php?id=100017551773031" target="_blank"><span class="fab fa-facebook-f"></span></a>
+                    <a href="https://twitter.com/DeveshS07072159" target="_blank"><span class="fab fa-twitter"></span></a>
+                    <a href="https://www.instagram.com/deveshs70283" target="_blank"><span class="fab fa-instagram"></span></a>
+                    <a href="https://www.linkedin.com/in/devesh-sharma-695b10190/" target="_blank"><span class="fab fa-linkedin"></span></a>
+                    <a href="https://www.github.com/deveshsharma002" target="_blank"><span class="fab fa-github"></span></a>
+                </div> 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
